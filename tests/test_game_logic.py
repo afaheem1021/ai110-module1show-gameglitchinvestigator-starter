@@ -14,3 +14,8 @@ def test_guess_too_low():
     # If secret is 50 and guess is 40, hint should be "Too Low"
     result = check_guess(40, 50)
     assert result == "Too Low"
+
+def test_guess_9_vs_secret_50_is_too_low():
+    # Numeric comparison must stay correct (not string-based)
+    result = check_guess(9, 50)
+    assert result == "Too Low"
