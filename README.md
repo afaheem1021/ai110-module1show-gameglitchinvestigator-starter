@@ -25,28 +25,38 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- [ number-guessing game where the player tries to guess the secret number] Describe the game's purpose.
+- [ in reflection.md] Detail which bugs you found.
+- [ AI fixed the hints and the new game button ] Explain what fixes you applied.
 
 ## 📸 Demo Walkthrough
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
 1. <!-- Describe this step -->
+game opens in normal difficulty 
 2. <!-- Describe this step -->
+user enters a guess (lets say 40), hint says go higher
 3. <!-- Describe this step -->
+user enters a guess (lets say 70), hint says go lower
 4. <!-- Describe this step -->
+user enters a guess (lets say 50), balloons show, and it says that you won and your final score
 5. <!-- Add more steps as needed -->
+user clicks new game then a new round starts
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 
 ## 🧪 Test Results
 
 ```
-# Paste your pytest output here, e.g.:
-# pytest tests/
-# ========================= X passed in 0.XXs =========================
+============================= test session starts =============================
+platform win32 -- Python 3.14.4, pytest-9.0.3, pluggy-1.6.0
+...
+tests/test_game_logic.py::test_winning_guess PASSED
+tests/test_game_logic.py::test_guess_too_high PASSED
+tests/test_game_logic.py::test_guess_too_low PASSED
+tests/test_game_logic.py::test_guess_9_vs_secret_50_is_too_low PASSED
+============================== 4 passed in 0.02s ==============================
 ```
 
 ## 🚀 Stretch Features

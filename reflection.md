@@ -66,11 +66,22 @@ Yes, the AI did desgin the tests and made the changes, it passed all 4 tests.
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
 
+everytime user interacts with the app, streamlit reruns the whole app.py file again which is refered as a rerun, st.session_state helps to keep the memory so it doesnt reset each time. 
+
 ---
 
 ## 5. Looking ahead: your developer habits
 
 - What is one habit or strategy from this project that you want to reuse in future labs or projects?
   - This could be a testing habit, a prompting strategy, or a way you used Git.
+
+Learning to use Git, still learning as this is my first time, used AI to help with that but I do plan on watching Tutorials later to learn it as its very important
+
+
 - What is one thing you would do differently next time you work with AI on a coding task?
+
+Trying to debug and read the code myself before delegating it to AI, developing an understanding before relying on AI
+
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+
+I was extremely impressed by how good AI was able to code and understand the project as a whole. AI models are continuing to get better so its important to learn how to prompt to them well.
